@@ -9,8 +9,9 @@ import A4 from "./assets/1.png";
 import Icon1 from "./assets/icon1.svg";
 import Icon2 from "./assets/icon2.svg";
 import Icon3 from "./assets/icon3.svg";
+import Space from "./assets/space2.jpg";
 
-import { Power4 } from "gsap/dist/gsap";
+import { Power4, Linear } from "gsap/dist/gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -37,6 +38,7 @@ function App() {
       }
     );
   }, []);
+  /* Desktop Anchors */
   const moveTo1 = () => {
     gsap.to(window, {
       scrollTo: {
@@ -163,7 +165,7 @@ function App() {
       display: "flex",
     });
   };
-
+  /* Move To Top Button */
   const handleToTop = () => {
     gsap.to(window, {
       scrollTo: {
@@ -173,6 +175,7 @@ function App() {
       ease: Power4.easeInOut,
     });
   };
+  /* Mobile Header Visibility */
   const showMobHeader = () => {
     $(".header-mob").slideDown(500);
     $(".close").css({
@@ -192,7 +195,8 @@ function App() {
     });
   };
   return (
-    <div className="App">
+    <div className="space">
+      <img src={Space} alt="" className="space-bg" />
       {/* MoveToTop Button */}
       <span className="moveToTop" onClick={handleToTop}>
         <MdArrowUpward />
@@ -249,7 +253,7 @@ function App() {
       </div>
 
       {/* Hero Section */}
-      <div className="hero section space" id="section1">
+      <div className="hero section " id="section1">
         <div className="box">
           <div className="hero-content">
             <div className="hc-left">

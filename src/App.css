@@ -1,6 +1,5 @@
 /* Universal Styles */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,17 +72,15 @@ button {
   right: 0;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  border: 1px solid var(--white);
   cursor: pointer;
   opacity: 0;
 }
 .cursive {
-  font-family: "Press Start 2P", cursive;
+  font-weight: 700;
 }
 .mainHeading {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
   color: var(--light-purple);
-  font-family: "Press Start 2P", cursive;
   font-weight: 700;
   width: 100%;
   display: flex;
@@ -91,14 +88,26 @@ button {
   justify-content: center;
   text-align: center;
   margin: 0 0 7.5rem 0;
+  position: relative;
+}
+.mainHeading::before {
+  content: "";
+  width: 7.5rem;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 1px);
+  background-color: var(--light);
 }
 /* Header */
 .header {
   width: 100%;
-  background-color: var(--light-purple);
-  position: sticky;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(3px);
 }
 .header-content {
   width: 100%;
@@ -114,12 +123,12 @@ button {
   display: none;
 }
 .header-content h1 {
-  font-size: 2.25rem;
-  color: var(--light);
+  font-size: 2.75rem;
+  color: var(--light-purple);
   font-weight: 700;
   margin: 0 1.5rem 0 0;
   cursor: pointer;
-  text-shadow: 2px 2px var(--dark-purple);
+  /* text-shadow: 1px 1px var(--light); */
 }
 .header-mob {
   position: absolute;
@@ -154,7 +163,7 @@ button {
   position: relative;
 }
 .header-content a:hover {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .header-mob a {
@@ -163,44 +172,33 @@ button {
   font-weight: 500;
   margin: 0 0 2.75rem 0;
 }
-
-/* Hero Section */
-.hero {
-  padding: 10rem 0;
+.space {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-.space {
-  position: relative;
-  width: 100%;
-}
-.space::after {
+.space-bg {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../src/assets/space.jpg");
+  background-image: url("../src/assets/space2.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   z-index: -2;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  transform: scale(1.1);
-  filter: brightness(0.85);
+  transform: scale(1.5);
+  filter: brightness(0.5);
 }
-.space::before {
-  content: "";
+/* Hero Section */
+.hero {
+  padding: 15rem 0 10rem 0;
+  position: relative;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(99, 50, 117, 0.75);
-  transform: scale(1.1);
+  overflow: hidden;
 }
 .hero-content {
   width: 100%;
@@ -235,11 +233,14 @@ button {
   margin: 0 1.25rem 0 0.25rem;
 }
 .hc-left h1 {
-  font-size: 3.25rem;
-  color: var(--light);
-  /* -webkit-text-stroke: 1px var(--light-purple); */
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--light-purple);
   font-weight: 700;
-  text-shadow: 3px 3px var(--light-purple);
+}
+.hc-left h1 span {
+  color: var(--light-purple);
+  -webkit-text-stroke: 2px transparent;
 }
 .hc-left h2 {
   font-size: 2.5rem;
@@ -300,7 +301,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  box-shadow: 1.75rem 1.75rem 0 var(--light-purple);
+  box-shadow: 1.5rem 1.5rem 0 var(--light-purple);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .hc-right img {
   width: 100%;
@@ -308,16 +311,17 @@ button {
 }
 /* About */
 .about {
-  background-color: var(--bgc);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* backdrop-filter: blur(3px); */
 }
 .about-content {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .about-content p {
   font-size: 1.75rem;
   font-weight: 500;
-  color: var(--dark-purple);
+  color: var(--light);
 }
 /* Species */
 .species-content {
@@ -326,7 +330,7 @@ button {
   grid-template-rows: auto;
   grid-gap: 5rem 5rem;
   margin: 0 auto;
-  width: 75%;
+  width: 85%;
 }
 .species-box {
   width: 100%;
@@ -334,26 +338,33 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-radius: 1rem;
+  overflow: hidden;
   background-color: var(--light-purple);
-  padding: 2.5rem;
+  transition: 0.5s;
+}
+.species-box:hover {
+  transform: translate(0, -1rem);
 }
 .species-box img {
+  border-radius: 1rem;
   width: 100%;
 }
 .species-box h3 {
-  padding: 2.5rem 0 0 0;
+  padding: 1.5rem 0;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: var(--bgc);
   width: 100%;
   text-align: center;
 }
 /* Roadmap */
 .roadmap {
-  background-color: var(--bgc);
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 5rem 0 0 0;
 }
 .roadmap-container {
-  width: 75%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,6 +377,7 @@ button {
   width: 100%;
   /* box-shadow: 0.25rem 0.25rem 0 var(--light-purple); */
   position: relative;
+  border-radius: 1rem;
 }
 .roadmap-container main {
   width: 0.25rem;
@@ -387,7 +399,7 @@ button {
 .mainSubHeading {
   font-size: 1.75rem;
   font-weight: 500;
-  color: var(--light-purple);
+  color: var(--light);
   width: 100%;
   margin: -5rem 0 5rem 0;
   width: 100%;
@@ -396,7 +408,7 @@ button {
   justify-content: center;
 }
 .roadmap-options {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .roadmap-options-ceiling {
@@ -432,6 +444,7 @@ button {
   justify-content: center;
   font-size: 1.5rem;
   color: var(--bgc);
+  border-radius: 0.5rem;
 }
 .roadmap-options-container :nth-child(2) .roadmap-option-rope,
 .roadmap-options-container :nth-child(6) .roadmap-option-rope {
@@ -446,7 +459,7 @@ button {
 }
 /* Team */
 .team {
-  background-color: var(--bgc);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .team-content {
   width: 85%;
@@ -460,6 +473,12 @@ button {
   width: 100%;
   background-color: var(--light-purple);
   position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.team-box:hover {
+  transform: translate(0, -1rem);
 }
 .team-box a {
   width: 3.5rem;
@@ -481,20 +500,21 @@ button {
 }
 .team-box > img {
   width: 100%;
+  border-radius: 1rem;
 }
 .team-box main {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 .team-box h6 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--white);
   width: 100%;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.5rem 0;
 }
 .team-box h5 {
   font-size: 1.5rem;
@@ -521,7 +541,7 @@ button {
 }
 .footer p {
   font-size: 1.5rem;
-  color: var(--gray);
+  color: var(--light);
   /* margin: 0.75rem 0 0 0; */
   opacity: 0.75;
   font-weight: 500;
@@ -550,6 +570,10 @@ button {
   }
 }
 @media screen and (max-width: 875px) {
+  .hc-right main {
+    width: 75%;
+    border-radius: 0.75rem;
+  }
   .header-pc {
     display: none;
   }
@@ -572,11 +596,14 @@ button {
     padding: 3.5rem 0;
   }
   .hero {
-    padding: 3.5rem 0 5rem 0;
+    padding: 10rem 0 5rem 0;
   }
   .mainHeading {
     margin: 0 0 3.5rem 0;
-    font-size: 1.75rem;
+    font-size: 2.75rem;
+  }
+  .mainHeading::before {
+    width: 5rem;
   }
   .species-box {
     padding: 0rem;
@@ -621,9 +648,9 @@ button {
     padding: 0.75rem;
   }
   .species-content {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    width: 75%;
+    grid-gap: 2.5rem;
   }
   .mainSubHeading {
     margin: -2.5rem 0 5rem 0;
@@ -635,10 +662,7 @@ button {
   }
   .roadmap-container {
     width: 100%;
-    align-items: flex-start;
-  }
-  .roadmap-box {
-    text-align: center;
+    align-items: center;
   }
   .roadmap-container main {
     height: 5rem;
@@ -699,8 +723,11 @@ button {
     padding: 0 1.75rem;
   }
   .team-content {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2.5rem;
+  }
+  .team-box h6 {
+    font-size: 2rem;
   }
 }
