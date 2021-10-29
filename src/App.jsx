@@ -260,18 +260,18 @@ function App() {
                 FuturePunkz <span className="cursive">DAO</span>
               </h1>
               <p>
-                10.000 unique and randomly generated Future Punkz came together
-                to save the future of humanity and sip $JUICE in UTOPIA.
+                7777 unique and randomly generated Future Punkz came together to
+                save the future of humanity and sip $JUICE in UTOPIA.
               </p>
               <button className="button">Mint Your Own!</button>
               <main>
-                <a href="">
+                <a href="https://discord.gg/Gc2Z5MUP">
                   <img src={Icon1} alt="" />
                 </a>
                 <a href="">
                   <img src={Icon2} alt="" />
                 </a>
-                <a href="">
+                <a href="https://twitter.com/FuturePunkzDao">
                   <img src={Icon3} alt="" />
                 </a>
               </main>
@@ -291,7 +291,7 @@ function App() {
       {/* Facts Section */}
       <div className="about section" id="section2">
         <div className="box">
-          <h2 className="mainHeading">Facts</h2>
+          <h2 className="mainHeading">ART - UTILITY - COMMUNITY </h2>
           <div className="about-content">
             <p>
               Future Punkz DAO is a NFT project with multiple utilities. One of
@@ -330,27 +330,27 @@ function App() {
           <div className="species-content">
             <div className="species-box">
               <img src={A1} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Psychic Punkz</h3>
             </div>
             <div className="species-box">
               <img src={A2} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Zombie Punkz</h3>
             </div>
             <div className="species-box">
               <img src={A1} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Radioactive Punkz</h3>
             </div>
             <div className="species-box">
               <img src={A2} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Neo Monkz</h3>
             </div>
             <div className="species-box">
               <img src={A1} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Ether Monkz</h3>
             </div>
             <div className="species-box">
               <img src={A2} alt="" />
-              <h3 className="">Species Name</h3>
+              <h3 className="">Jedi Monkz</h3>
             </div>
           </div>
         </div>
@@ -396,11 +396,18 @@ function App() {
               <div className="roadmap-box">
                 <h4>Secondary Sale</h4>
                 <p>
-                ➥ <b>75%</b> of open sea royalties to the community wallet
+                  ➥ <b>75%</b> of open sea royalties to the community wallet
                 </p>
-                <p>➥ <b>25%</b> goes to development and staff.</p>
-                <p>➥ Tokenomics for <b>$JUICE</b> will be decided by the community.</p>
-                <p>➥ FuturePunkz Nft can be staked to earn <b>$JUICE.</b></p>
+                <p>
+                  ➥ <b>25%</b> goes to development and staff.
+                </p>
+                <p>
+                  ➥ Tokenomics for <b>$JUICE</b> will be decided by the
+                  community.
+                </p>
+                <p>
+                  ➥ FuturePunkz Nft can be staked to earn <b>$JUICE.</b>
+                </p>
               </div>
               <main></main>
             </div>
@@ -409,31 +416,31 @@ function App() {
               <div className="roadmap-options-container">
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 1</div>
+                  <div className="roadmap-option-text">Breeding?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 2</div>
+                  <div className="roadmap-option-text">Event?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 3</div>
+                  <div className="roadmap-option-text">Fruit project?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 4</div>
+                  <div className="roadmap-option-text">Donation?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 5</div>
+                  <div className="roadmap-option-text">BAYC?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 5</div>
+                  <div className="roadmap-option-text">Merch? </div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">OPTION 5</div>
+                  <div className="roadmap-option-text">Metaverse?</div>
                 </div>
               </div>
             </div>
@@ -446,19 +453,22 @@ function App() {
         <div className="box">
           <div className="about-content">
             <p>
-              Where do we go from here? We have so many ideas and possibilities
-              and as a Dao we want to decide together with the community which
-              roads we take.
+              We have many possibilities and ideas from here. But its essential
+              to a real DAO that we all decide together on which roads to take
+              with this project. When phase 1 is completed we will introduce a
+              few options for phase 2.
             </p>
             <br />
-            <p>A few things are for sure:</p>
             <p>
-              We enjoy providing our members with value on top of value. We
-              believe in a future of unity, financial freedom, creativity and
-              love. Every part of our team is contributing his/her unique
-              superpower to turn our vision to reality. Be part of the tribe,
-              hold strong, be yourself and soon we gonna sip $JUICE in UTOPIA.
+              We recommend to hold at least 2 Future Punkz of 2 different
+              species until that point. Future Punkz Dao is a circle inside of a
+              system of multiple circles. We are excited to share the process
+              with you and can’t wait to build a longterm utility for our
+              members.{" "}
             </p>
+            <br />
+            <p>FuturePunkz DAO = Key</p>
+            <p>Door coming soon. Hold.</p>
           </div>
         </div>
       </div>
@@ -473,28 +483,42 @@ function App() {
                 <img src={Icon3} alt="" />
               </a>
               <img src={A1} alt="" />
-              <h6>Lorem, ipsum do culpa!</h6>
+              <main>
+                <h6>Numa Saca</h6>
+                <h5>Founder </h5>
+                <h5>Community manager </h5>
+              </main>
             </div>
             <div className="team-box">
               <a href="#">
                 <img src={Icon3} alt="" />
               </a>
               <img src={A1} alt="" />
-              <h6>Lorem, ipsum do culpa!</h6>
+              <main>
+                <h6>Solo Monk</h6>
+                <h5>Founder </h5>
+                <h5>Creative director</h5>
+              </main>
             </div>
             <div className="team-box">
               <a href="#">
                 <img src={Icon3} alt="" />
               </a>
               <img src={A1} alt="" />
-              <h6>Lorem, ipsum do culpa!</h6>
+              <main>
+                <h6>Huzaifa</h6>
+                <h5>Artist</h5>
+              </main>
             </div>
             <div className="team-box">
               <a href="#">
                 <img src={Icon3} alt="" />
               </a>
               <img src={A1} alt="" />
-              <h6>Lorem, ipsum do culpa!</h6>
+              <main>
+                <h6>69Hunter </h6>
+                <h5>Developer </h5>
+              </main>
             </div>
           </div>
         </div>
