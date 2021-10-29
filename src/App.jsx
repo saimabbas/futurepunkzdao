@@ -249,7 +249,7 @@ function App() {
       </div>
 
       {/* Hero Section */}
-      <div className="hero section" id="section1">
+      <div className="hero section space" id="section1">
         <div className="box">
           <div className="hero-content">
             <div className="hc-left">
