@@ -267,14 +267,14 @@ function App() {
                 7777 unique and randomly generated Future Punkz came together to
                 save the future of humanity and sip $JUICE in UTOPIA.
               </p>
-              <button className="button">Mint Your Own!</button>
+              <button className="button">Mint Soon!</button>
               <main>
                 <a href="https://discord.gg/Gc2Z5MUP">
                   <img src={Icon1} alt="" />
                 </a>
-                <a href="">
+                {/* <a href="">
                   <img src={Icon2} alt="" />
-                </a>
+                </a> */}
                 <a href="https://twitter.com/FuturePunkzDao">
                   <img src={Icon3} alt="" />
                 </a>
