@@ -677,7 +677,7 @@ button {
   }
   .roadmap-options {
     width: 100%;
-    border-left: 0.25rem solid var(--light-purple);
+    border-left: 0.25rem solid rgba(133, 58, 160, 0.5);
   }
 
   .roadmap-options-container :nth-child(1) .roadmap-option-rope,

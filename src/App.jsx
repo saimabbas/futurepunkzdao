@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import "./App.css";
 import { FaDiscord, FaTwitterSquare } from "react-icons/fa";
 import { MdArrowUpward, MdMenu, MdClose } from "react-icons/md";
-import A1 from "./assets/1.png";
-import A2 from "./assets/2.png";
-import A3 from "./assets/2.png";
-import A4 from "./assets/1.png";
+import Specie1 from "./assets/Specie1.png";
+import Specie2 from "./assets/Specie2.png";
+import Specie3 from "./assets/Specie3.png";
+import Specie4 from "./assets/Specie4.png";
+import Specie5 from "./assets/Specie5.png";
+import Specie6 from "./assets/Specie6.jpg";
+import Specie7 from "./assets/Specie7.png";
 import Icon1 from "./assets/icon1.svg";
-import Icon2 from "./assets/icon2.svg";
 import Icon3 from "./assets/icon3.svg";
 import Space from "./assets/space2.jpg";
 
@@ -257,9 +259,9 @@ function App() {
         <div className="box">
           <div className="hero-content">
             <div className="hc-left">
-              <h3 className="cursive">
+              {/* <h3 className="cursive">
                 Coming Soon <span id="timer"></span>
-              </h3>
+              </h3> */}
               <h1 className="cursive">
                 FuturePunkz <span className="cursive">DAO</span>
               </h1>
@@ -282,10 +284,10 @@ function App() {
             </div>
             <div className="hc-right">
               <main>
-                <img src={A1} alt="" />
-                <img src={A2} alt="" />
-                <img src={A3} alt="" />
-                <img src={A4} alt="" />
+                <img src={Specie1} alt="" />
+                <img src={Specie2} alt="" />
+                <img src={Specie3} alt="" />
+                <img src={Specie6} alt="" />
               </main>
             </div>
           </div>
@@ -333,27 +335,27 @@ function App() {
           <h2 className="mainHeading">Species</h2>
           <div className="species-content">
             <div className="species-box">
-              <img src={A1} alt="" />
+              <img src={Specie1} alt="" />
               <h3 className="">Psychic Punkz</h3>
             </div>
             <div className="species-box">
-              <img src={A2} alt="" />
+              <img src={Specie2} alt="" />
               <h3 className="">Zombie Punkz</h3>
             </div>
             <div className="species-box">
-              <img src={A1} alt="" />
+              <img src={Specie3} alt="" />
               <h3 className="">Radioactive Punkz</h3>
             </div>
             <div className="species-box">
-              <img src={A2} alt="" />
+              <img src={Specie4} alt="" />
               <h3 className="">Neo Monkz</h3>
             </div>
             <div className="species-box">
-              <img src={A1} alt="" />
+              <img src={Specie5} alt="" />
               <h3 className="">Ether Monkz</h3>
             </div>
             <div className="species-box">
-              <img src={A2} alt="" />
+              <img src={Specie6} alt="" />
               <h3 className="">Jedi Monkz</h3>
             </div>
           </div>
@@ -420,31 +422,31 @@ function App() {
               <div className="roadmap-options-container">
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
+                  <div className="roadmap-option-text">BAYC? </div>
+                </div>
+                <div className="roadmap-option-box">
+                  <div className="roadmap-option-rope"></div>
                   <div className="roadmap-option-text">Breeding?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">Event?</div>
+                  <div className="roadmap-option-text">Fruit Project?</div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">Fruit project?</div>
+                  <div className="roadmap-option-text">Your ideas</div>
+                </div>
+                <div className="roadmap-option-box">
+                  <div className="roadmap-option-rope"></div>
+                  <div className="roadmap-option-text">Merch?</div>
+                </div>
+                <div className="roadmap-option-box">
+                  <div className="roadmap-option-rope"></div>
+                  <div className="roadmap-option-text">Event? </div>
                 </div>
                 <div className="roadmap-option-box">
                   <div className="roadmap-option-rope"></div>
                   <div className="roadmap-option-text">Donation?</div>
-                </div>
-                <div className="roadmap-option-box">
-                  <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">BAYC?</div>
-                </div>
-                <div className="roadmap-option-box">
-                  <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">Merch? </div>
-                </div>
-                <div className="roadmap-option-box">
-                  <div className="roadmap-option-rope"></div>
-                  <div className="roadmap-option-text">Metaverse?</div>
                 </div>
               </div>
             </div>
@@ -458,9 +460,9 @@ function App() {
           <div className="about-content">
             <p>
               We have many possibilities and ideas from here. But its essential
-              to a real DAO that we all decide together on which roads to take
-              with this project. When phase 1 is completed we will introduce a
-              few options for phase 2.
+              to a Dao that the community votes on which roads we take with the
+              project. When phase 1 is completed we will introduce a few options
+              for phase 2.
             </p>
             <br />
             <p>
@@ -483,10 +485,10 @@ function App() {
           <div className="mainHeading">Team</div>
           <div className="team-content">
             <div className="team-box">
-              <a href="#">
+              <a href="https://twitter.com/NuMaSaCa1">
                 <img src={Icon3} alt="" />
               </a>
-              <img src={A1} alt="" />
+              <img src={Specie1} alt="" />
               <main>
                 <h6>Numa Saca</h6>
                 <h5>Founder </h5>
@@ -494,10 +496,10 @@ function App() {
               </main>
             </div>
             <div className="team-box">
-              <a href="#">
+              <a href="https://twitter.com/Solo2313137943">
                 <img src={Icon3} alt="" />
               </a>
-              <img src={A1} alt="" />
+              <img src={Specie7} alt="" />
               <main>
                 <h6>Solo Monk</h6>
                 <h5>Founder </h5>
@@ -505,20 +507,20 @@ function App() {
               </main>
             </div>
             <div className="team-box">
-              <a href="#">
+              <a href="https://twitter.com/HbHbHb83658985">
                 <img src={Icon3} alt="" />
               </a>
-              <img src={A1} alt="" />
+              <img src={Specie6} alt="" />
               <main>
                 <h6>Huzaifa</h6>
                 <h5>Artist</h5>
               </main>
             </div>
             <div className="team-box">
-              <a href="#">
+              {/* <a href="#">
                 <img src={Icon3} alt="" />
-              </a>
-              <img src={A1} alt="" />
+              </a> */}
+              <img src={Specie3} alt="" />
               <main>
                 <h6>69Hunter </h6>
                 <h5>Developer </h5>
