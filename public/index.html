@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>FuturePunkz DAO</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML =
+          days + "<i>DAYS</i> " + hours + "<i>HOURS</i>" + minutes + "<i>MINUTES</i>" + seconds + "<i>SECONDS</i>";
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
