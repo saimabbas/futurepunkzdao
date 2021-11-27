@@ -14,7 +14,7 @@
   --light: rgba(255, 255, 255, 0.65);
   --gray: rgba(0, 0, 0, 0.65);
   --dark-purple: #261e2a;
-  --light-purple: #853aa0;
+  --light-purple: #fff;
 }
 html,
 body {
@@ -49,18 +49,19 @@ button {
 .button {
   font-size: 1.75rem;
   font-weight: 600;
-  color: var(--light-purple);
-  background-color: var(--bgc);
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
   padding: 1.25rem 2.75rem;
   transition: 0.5s;
   z-index: 2;
   position: relative;
-  box-shadow: 0.5rem 0.5rem 0 var(--light-purple);
+  box-shadow: 0.5rem 0.5rem 0 var(--white);
 }
 .moveToTop {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +108,7 @@ button {
   position: fixed;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
 }
 .header-content {
   width: 100%;
@@ -190,11 +191,16 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  transform: scale(1.5);
-  filter: brightness(0.5);
+  transform: scale(1);
+  filter: brightness(0);
   object-fit: cover;
 }
 /* Hero Section */
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 .hero {
   padding: 15rem 0 10rem 0;
   position: relative;
@@ -216,14 +222,6 @@ button {
   justify-content: center;
   width: 100%;
 }
-.hc-left h3 {
-  font-size: 1.5rem;
-  color: var(--bgc);
-  font-weight: 500;
-  margin: 0 0 1.5rem 0;
-  display: flex;
-  align-items: center;
-}
 .hc-left h3 span {
   font-size: 2.5rem;
   color: var(--bgc);
@@ -236,17 +234,24 @@ button {
 .hc-left h1 {
   font-size: 5rem;
   color: transparent;
-  -webkit-text-stroke: 2px var(--light-purple);
+  -webkit-text-stroke: 1px var(--light-purple);
   font-weight: 700;
+  margin: 0 0 1.5rem 0;
+}
+.hc-left h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: var(--white);
+}
+.hc-left h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.5;
 }
 .hc-left h1 span {
   color: var(--light-purple);
   -webkit-text-stroke: 2px transparent;
-}
-.hc-left h2 {
-  font-size: 2.5rem;
-  color: var(--white);
-  font-weight: 700;
 }
 .hc-left p {
   font-size: 2rem;
@@ -263,7 +268,8 @@ button {
 .hc-left main a {
   width: 5rem;
   height: 5rem;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--black);
+  border: 1px solid var(--white);
   opacity: 75%;
   display: flex;
   align-items: center;
@@ -306,9 +312,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  box-shadow: 1.5rem 1.5rem 0 rgba(133, 58, 160, 0.5);
-  border-radius: 1rem;
+  box-shadow: 1.5rem 1.5rem 0 var(--white);
   overflow: hidden;
+  border: 5px solid var(--black);
 }
 .hc-right img {
   width: 100%;
@@ -343,24 +349,22 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-radius: 1rem;
   overflow: hidden;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
   transition: 0.5s;
-  border: 0.25rem solid rgba(133, 58, 160, 0.5);
+  border: 0.25rem solid var(--white);
 }
 .species-box:hover {
   transform: translate(0, -1rem);
 }
 .species-box img {
-  border-radius: 1rem;
   width: 100%;
 }
 .species-box h3 {
   padding: 1.5rem 0;
   font-weight: 500;
   font-size: 2rem;
-  color: var(--bgc);
+  color: var(--black);
   width: 100%;
   text-align: center;
 }
@@ -379,28 +383,27 @@ button {
 .roadmap-box {
   padding: 1.5rem 2.5rem;
   margin: 0 auto 0rem auto;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
   width: 100%;
   /* box-shadow: 0.25rem 0.25rem 0 var(--light-purple); */
   position: relative;
-  border-radius: 1rem;
-  border: 0.25rem solid rgba(133, 58, 160, 0.5);
+  border: 0.25rem solid var(--white);
 }
 .roadmap-container main {
   width: 0.25rem;
   height: 10rem;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
 }
 .roadmap-box h4 {
   font-weight: 700;
   font-size: 2.5rem;
-  color: var(--bgc);
+  color: var(--black);
   position: relative;
   margin: 0 0 1.5rem 0;
 }
 .roadmap-box p {
   font-size: 1.75rem;
-  color: var(--bgc);
+  color: var(--black);
   margin: 0.75rem 0 0 0;
 }
 .mainSubHeading {
@@ -421,7 +424,7 @@ button {
 .roadmap-options-ceiling {
   width: 100%;
   height: 0.25rem;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
 }
 .roadmap-options-container {
   width: 100%;
@@ -439,19 +442,18 @@ button {
 .roadmap-option-rope {
   width: 0.25rem;
   height: 5rem;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
 }
 .roadmap-option-text {
   width: 100%;
-  border: 0.25rem solid rgba(133, 58, 160, 0.5);
+  border: 0.25rem solid var(--white);
   padding: 1rem 0;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--bgc);
-  border-radius: 0.5rem;
+  color: var(--black);
 }
 .roadmap-options-container :nth-child(2) .roadmap-option-rope,
 .roadmap-options-container :nth-child(6) .roadmap-option-rope {
@@ -478,12 +480,11 @@ button {
 }
 .team-box {
   width: 100%;
-  background-color: rgba(133, 58, 160, 0.5);
+  background-color: var(--white);
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
   transition: 0.5s;
-  border: 0.25rem solid rgba(133, 58, 160, 0.5);
+  border: 0.25rem solid var(--white);
 }
 .team-box:hover {
   transform: translate(0, -1rem);
@@ -492,7 +493,7 @@ button {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background-color: var(--light-purple);
+  background-color: var(--black);
   border: 1px solid var(--bgc);
   display: flex;
   align-items: center;
@@ -508,7 +509,6 @@ button {
 }
 .team-box > img {
   width: 100%;
-  border-radius: 1rem;
 }
 .team-box main {
   width: 100%;
@@ -520,19 +520,23 @@ button {
 .team-box h6 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   width: 100%;
   margin: 0 0 0.5rem 0;
 }
 .team-box h5 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--bgc);
+  color: var(--black);
   width: 100%;
 }
 /* Footer */
+.footer-parent {
+  width: 100%;
+  border-top: 1px solid var(--white);
+}
 .footer {
-  padding: 5rem 0;
+  padding: 3.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -580,7 +584,6 @@ button {
 @media screen and (max-width: 875px) {
   .hc-right main {
     width: 75%;
-    border-radius: 0.75rem;
   }
   .header-pc {
     display: none;
@@ -677,7 +680,7 @@ button {
   }
   .roadmap-options {
     width: 100%;
-    border-left: 0.25rem solid rgba(133, 58, 160, 0.5);
+    border-left: 0.25rem solid var(--white);
   }
 
   .roadmap-options-container :nth-child(1) .roadmap-option-rope,
@@ -695,7 +698,7 @@ button {
     margin: 2.5rem 0 0 0;
   }
   .hc-right main {
-    box-shadow: 1.25rem 1.25rem 0 var(--light-purple);
+    box-shadow: 1.25rem 1.25rem 0 var(--white);
   }
   .roadmap-options-ceiling {
     width: 100%;

@@ -11,7 +11,8 @@ import Specie6 from "./assets/Specie6.jpg";
 import Specie7 from "./assets/Specie7.png";
 import Icon1 from "./assets/icon1.svg";
 import Icon3 from "./assets/icon3.svg";
-import Space from "./assets/space2.jpg";
+import Space from "./assets/black.jpg";
+import HeroBanner from "./assets/hero-banner.jpg";
 
 import { Power4, Linear } from "gsap/dist/gsap";
 import { gsap } from "gsap";
@@ -41,11 +42,19 @@ function App() {
     );
   }, []);
   /* Desktop Anchors */
+  const moveToHome = () => {
+    gsap.to(window, {
+      scrollTo: {
+        y: "#sectionHome",
+        offsetY: 65,
+      },
+      ease: Power4.easeInOut,
+    });
+  };
   const moveTo1 = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section1",
-        offsetY: 65,
       },
       ease: Power4.easeInOut,
     });
@@ -198,7 +207,7 @@ function App() {
   };
   return (
     <div className="space">
-      <img src={Space} alt="" className="space-bg" />
+      <img src={HeroBanner} alt="" className="space-bg" />
       {/* MoveToTop Button */}
       <span className="moveToTop" onClick={handleToTop}>
         <MdArrowUpward />
@@ -212,14 +221,17 @@ function App() {
               FuturePunkz DAO
             </h1>
             <div className="header-pc">
+              <a onClick={moveToHome} className="mt mtHome">
+                Home
+              </a>
               <a onClick={moveTo1} className="mt mt2">
                 Mint
               </a>
               <a onClick={moveTo2} className="mt mt3">
-                About
+                Story
               </a>
               <a onClick={moveTo3} className="mt mt4">
-                Species
+                DAO Battle
               </a>
               <a onClick={moveTo4} className="mt mt5">
                 Roadmap
@@ -254,39 +266,27 @@ function App() {
         </div>
       </div>
 
+      {/* Hero Banner */}
+      <img id="sectionHome" src={HeroBanner} className="hero-banner" alt="" />
       {/* Hero Section */}
       <div className="hero section " id="section1">
         <div className="box">
           <div className="hero-content">
             <div className="hc-left">
-              {/* <h3 className="cursive">
-                Coming Soon <span id="timer"></span>
-              </h3> */}
-              <h1 className="cursive">
-                FuturePunkz <span className="cursive">DAO</span>
-              </h1>
-              <p>
-                7777 unique and randomly generated Future Punkz came together to
-                save the future of humanity and sip $JUICE in UTOPIA.
-              </p>
-              <button className="button">Mint Soon!</button>
-              <main>
-                <a href="https://discord.gg/Gc2Z5MUP">
-                  <img src={Icon1} alt="" />
-                </a>
-                {/* <a href="">
-                  <img src={Icon2} alt="" />
-                </a> */}
-                <a href="https://twitter.com/FuturePunkzDao">
-                  <img src={Icon3} alt="" />
-                </a>
-              </main>
+              <h1 className="cursive">Presale</h1>
+              <h2>Mint your Future Punk</h2>
+              <h2>
+                Price per NFT: <b>0.03 Eth</b>
+              </h2>
+              <br />
+              <h3>0.03 Eth</h3>
+              <h3>Maximum 3 NFTs per wallet </h3>
             </div>
             <div className="hc-right">
               <main>
                 <img src={Specie1} alt="" />
                 <img src={Specie2} alt="" />
-                <img src={Specie3} alt="" />
+                <img src={Specie4} alt="" />
                 <img src={Specie6} alt="" />
               </main>
             </div>
@@ -297,8 +297,8 @@ function App() {
       {/* Facts Section */}
       <div className="about section" id="section2">
         <div className="box">
-          <h2 className="mainHeading">ART - UTILITY - COMMUNITY </h2>
-          <div className="about-content">
+          <h2 className="mainHeading">STORY</h2>
+          {/* <div className="about-content">
             <p>
               Future Punkz DAO is a NFT project with multiple utilities. One of
               them is the purchase and fractionalization of blue chip NFTs. The
@@ -325,15 +325,15 @@ function App() {
               dedicating <b>7.5%</b> of open sea royalties to the community
               wallet and <b>2.5%</b> to development and staff.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Species Section */}
       <div className="species section" id="section3">
         <div className="box">
-          <h2 className="mainHeading">Species</h2>
-          <div className="species-content">
+          <h2 className="mainHeading">DAO Battle</h2>
+          {/* <div className="species-content">
             <div className="species-box">
               <img src={Specie1} alt="" />
               <h3 className="">Psychic Punkz</h3>
@@ -358,7 +358,7 @@ function App() {
               <img src={Specie6} alt="" />
               <h3 className="">Jedi Monkz</h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -392,7 +392,7 @@ function App() {
               <div className="roadmap-box">
                 <h4>After 100% sellout</h4>
                 <p>➥ Add 100 Ethereum to the DAO wallet</p>
-                <p>➥ Thats 25% of all mint funds</p>
+                <p>➥ Thats 42% of all mint funds</p>
                 <p>➥ Make our first Bluechip NFT purchase </p>
                 <p>➥ Start implementing staking. </p>
               </div>
@@ -531,13 +531,15 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div className="box">
-        <div className="footer">
-          {/*  <span>
+      <div className="footer-parent">
+        <div className="box">
+          <div className="footer">
+            {/*  <span>
             <FaDiscord />
             <FaTwitterSquare />
           </span> */}
-          <p>Copyright © 2021 FuturePunkz DAO. All Rights Reserved.</p>
+            <p>Copyright © 2021 FuturePunkz DAO. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </div>
