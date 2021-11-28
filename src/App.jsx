@@ -9,10 +9,14 @@ import Specie4 from "./assets/Specie4.png";
 import Specie5 from "./assets/Specie5.png";
 import Specie6 from "./assets/Specie6.jpg";
 import Specie7 from "./assets/Specie7.png";
+import Specie8 from "./assets/Specie8.png";
+import Specie9 from "./assets/Specie9.png";
+import Specie10 from "./assets/Specie10.png";
 import Icon1 from "./assets/icon1.svg";
 import Icon3 from "./assets/icon3.svg";
 import Space from "./assets/black.jpg";
 import HeroBanner from "./assets/hero-banner.jpg";
+import Logo from "./assets/logo.png";
 
 import { Power4, Linear } from "gsap/dist/gsap";
 import { gsap } from "gsap";
@@ -96,11 +100,26 @@ function App() {
     });
   };
   /* Mobile Anchors */
+  const moveToHomeMob = () => {
+    gsap.to(window, {
+      scrollTo: {
+        y: "#sectionHome",
+      },
+      ease: Power4.easeInOut,
+    });
+    $(".header-mob").slideUp(500);
+    $(".close").css({
+      display: "none",
+    });
+    $(".burger").css({
+      display: "flex",
+    });
+  };
   const moveTo1Mob = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section1",
-        offsetY: 65,
+        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -116,7 +135,7 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section2",
-        offsetY: 65,
+        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -132,7 +151,7 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section3",
-        offsetY: 65,
+        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -148,7 +167,7 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section4",
-        offsetY: 65,
+        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -164,7 +183,7 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section5",
-        offsetY: 65,
+        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -180,8 +199,7 @@ function App() {
   const handleToTop = () => {
     gsap.to(window, {
       scrollTo: {
-        y: "#section1",
-        offsetY: 65,
+        y: "#sectionHome",
       },
       ease: Power4.easeInOut,
     });
@@ -217,9 +235,10 @@ function App() {
       <div className="header">
         <div className="box">
           <div className="header-content">
-            <h1 onClick={moveTo1} className="cursive">
+            {/* <h1 onClick={moveTo1} className="cursive">
               FuturePunkz DAO
-            </h1>
+            </h1> */}
+            <img onClick={moveTo1} src={Logo} alt="" />
             <div className="header-pc">
               <a onClick={moveToHome} className="mt mtHome">
                 Home
@@ -245,14 +264,17 @@ function App() {
             <MdClose className="close" onClick={hideMobHeader} />
             <div className="header-mob">
               <main>
+                <a onClick={moveToHomeMob} className="mt mtHome">
+                  Home
+                </a>
                 <a onClick={moveTo1Mob} className="mt mt2">
                   Mint
                 </a>
                 <a onClick={moveTo2Mob} className="mt mt3">
-                  About
+                  Story
                 </a>
                 <a onClick={moveTo3Mob} className="mt mt4">
-                  Species
+                  DAO Battle
                 </a>
                 <a onClick={moveTo4Mob} className="mt mt5">
                   Roadmap
@@ -294,71 +316,166 @@ function App() {
         </div>
       </div>
 
-      {/* Facts Section */}
+      {/* Story Section */}
       <div className="about section" id="section2">
         <div className="box">
           <h2 className="mainHeading">STORY</h2>
-          {/* <div className="about-content">
-            <p>
-              Future Punkz DAO is a NFT project with multiple utilities. One of
-              them is the purchase and fractionalization of blue chip NFTs. The
-              holders will be granted access to the exclusive community and
-              receive voting rights over the DAO’s asset.
-            </p>
-            <br />
-            <p>
-              $JUICE token represents a fractional share of the master NFT
-              vault. Every staked FuturePunk will receive a certain amount of
-              $JUICE a day. $JUICE is a strictly utility token in the Future
-              Punkz ecosystem. The value of this token is: 1 $JUICE = 1 $JUICE.
-            </p>
-            <br />
-            <p>
-              Future Punkz NFT also acts as a whitelist pass for upcoming drops
-              so make sure you always hold at least one. More future utility
-              will be announced after phase 2 of our Roadmap.
-            </p>
-            <br />
-            <p>
-              <b>42%</b> of the initial mint revenue will be dedicated to the
-              community wallet controlled by the DAO. Additionally, we are
-              dedicating <b>7.5%</b> of open sea royalties to the community
-              wallet and <b>2.5%</b> to development and staff.
-            </p>
-          </div> */}
+          <div className="story-grid">
+            <div className="story-grid-left">
+              <main>
+                <img src={Specie1} alt="" />
+                <img src={Specie2} alt="" />
+                <img src={Specie4} alt="" />
+                <img src={Specie6} alt="" />
+                <img src={Specie1} alt="" />
+                <img src={Specie2} alt="" />
+                <img src={Specie4} alt="" />
+                <img src={Specie6} alt="" />
+                <img src={Specie6} alt="" />
+              </main>
+            </div>
+            <div className="story-grid-right">
+              <h1>THE STORY</h1>
+              <h1>Future Punkz Genesis - Battle for Utopia. </h1>
+              <p>
+                In the mountains of Nepal, a cave was discovered, holding the
+                story of 4 legendary Monkz…
+                <br />
+                <br />
+                It is said that they were so wise, they created a decentralized
+                city of financial freedom and abundance called Utopia. In
+                Utopia, people lived in harmony with their finances,
+                decentralized from authority.
+                <br />
+                <br />
+                The true history of the Monkz has long been forgotten, but
+                legends and rumors of a portal that leads to their world have
+                been part of many cultures’ lore for thousands of years. Some
+                call it the vault of time, the valley of forever, or just the
+                Eternal.
+                <br />
+                <br />
+                Every time the portal opens, a war breaks out between the
+                world’s most powerful tribes to claim the right to enter the
+                lost valley and gain access to the secret riches of Utopia.
+                <br />
+                <br />
+                In the year 4444, the portal opened and war broke out once
+                again.
+                <br />
+                <br />
+                Two great factions rose, The Psychic Punkz and the Alchemist
+                Punkz. Which faction will win out and make it to the city of
+                Utopia in the Monkz metaverse?
+                <br />
+                <br />
+                Psychic Punkz possess the power of seeing the short-term future
+                and therefore are excellent at fast decisions. They take high
+                risks and earn high rewards.
+                <br />
+                <br />
+                Alchemist Punkz rely on their experience and knowledge and
+                therefore can calculate what projects will prevail long-term.
+                With the power of patience and conviction, they accumulate
+                slowly, but steadily, over time.
+              </p>
+              <h1>CHOOSE YOUR TRIBE</h1>
+              <p>
+                Future Punkz Genesis is a collection of 4444 NFTs on the
+                Ethereum Blockchain. The holders gain access to DAO votes, the
+                DAO game, and future drops.
+                <br />
+                <br />
+                The first DAO battle of its kind.
+                <br />
+                <br />
+                An experiment to find out which investment strategy is the best
+                in the fast-moving NFT market. A friendly competition to create
+                the most value for our community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Species Section */}
+      {/* DAO Battle Section */}
       <div className="species section" id="section3">
         <div className="box">
           <h2 className="mainHeading">DAO Battle</h2>
-          {/* <div className="species-content">
-            <div className="species-box">
-              <img src={Specie1} alt="" />
-              <h3 className="">Psychic Punkz</h3>
+          <div className="dao-battle">
+            <h1>THE DAO GAME</h1>
+            <h1>Psychics vs Alchemists </h1>
+            <h2>
+              We welcome you to join a new DAO game and competition that has
+              never been done before...
+              <br />
+              Depending on which of these NFTs you hold, you receive access to
+              different areas of the game and different voting rights.
+            </h2>
+            <div className="dao-grid">
+              <div className="dao-grid-cell">
+                <img src={Specie8} alt="" />
+                <h3>PSYCHIC PUNK</h3>
+                <ul>
+                  <li>- Voting power for short term purchases and flips.</li>
+                  <li>- Voting power for planet proposals.</li>
+                  <li>- Whitelist pass for V2.</li>
+                  <li>- Access to V2 creation process.</li>
+                  <li>- Access to metaverse property</li>
+                  <li>- Number of NFTs: 1639</li>
+                </ul>
+              </div>
+              <div className="dao-grid-cell">
+                <img src={Specie9} alt="" />
+                <h3>ALCHEMIST PUNK</h3>
+                <ul>
+                  <li>- Voting power for long term purchases.</li>
+                  <li>- Voting power for planet proposals.</li>
+                  <li>- Whitelist pass for V2.</li>
+                  <li>- Access to V2 creation process.</li>
+                  <li>- Access to metaverse property</li>
+                  <li>- Number of NFTs: 1639</li>
+                </ul>
+              </div>
+              <div className="dao-grid-cell">
+                <img src={Specie10} alt="" />
+                <h3>LEGENDARY MONK</h3>
+                <ul>
+                  <li>- Voting power over any side.</li>
+                  <li>- Voting power for planet proposals.</li>
+                  <li>- Free mintpass for V2.</li>
+                  <li>- Access to V2 creation process.</li>
+                  <li>- Access to metaverse property</li>
+                  <li>- more special perks</li>
+                  <li>- Number of NFTs: 1639-</li>
+                </ul>
+              </div>
             </div>
-            <div className="species-box">
-              <img src={Specie2} alt="" />
-              <h3 className="">Zombie Punkz</h3>
-            </div>
-            <div className="species-box">
-              <img src={Specie3} alt="" />
-              <h3 className="">Radioactive Punkz</h3>
-            </div>
-            <div className="species-box">
-              <img src={Specie4} alt="" />
-              <h3 className="">Neo Monkz</h3>
-            </div>
-            <div className="species-box">
-              <img src={Specie5} alt="" />
-              <h3 className="">Ether Monkz</h3>
-            </div>
-            <div className="species-box">
-              <img src={Specie6} alt="" />
-              <h3 className="">Jedi Monkz</h3>
-            </div>
-          </div> */}
+            <h2>Short term purchases will be held in the Psychic wallet. </h2>
+            <h2>Long-term purchases will be stored in the Alchemist wallet.</h2>
+            <h2>Legendary monkz can choose on which site they stand.</h2>
+            <br />
+            <br />
+            <p>
+              The V2 collection will also be added to the game later on.
+              <br />
+              After one year we will compare which investment strategy was more
+              successful. The winner gets to decide what happens next with the
+              combined funds.
+              <br />
+              This is a game and an experiment. We can purchase bluechips NFts,
+              small-, midtier projects, crypto and metaverse land.
+            </p>
+            <br />
+            <br />
+            <p>
+              <b>Disclaimer:</b> Not all DAO related votes will be voted in
+              these devisions. Planet proposals regarding important aspects
+              inside the community and the trajectory of the movement will be
+              decided by equally distributed voting power. Here you can read
+              more about that.
+            </p>
+          </div>
         </div>
       </div>
 
