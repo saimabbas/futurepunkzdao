@@ -11,6 +11,18 @@ import Specie6 from "./assets/Specie6.jpg";
 import Specie7 from "./assets/Specie7.png";
 import Specie8 from "./assets/Specie8.png";
 import Specie9 from "./assets/Specie9.png";
+import Story1 from "./assets/Story1.png";
+import Story2 from "./assets/Story2.png";
+import Story3 from "./assets/Story3.png";
+import DAO1 from "./assets/DAO1.png";
+import DAO2 from "./assets/DAO2.png";
+import DAO3 from "./assets/DAO3.png";
+import Story4 from "./assets/Story4.png";
+import Story5 from "./assets/Story5.png";
+import Story6 from "./assets/Story6.png";
+import Story7 from "./assets/Story7.png";
+import Story8 from "./assets/Story8.png";
+import Story9 from "./assets/Story9.png";
 import Specie10 from "./assets/Specie10.png";
 import Icon1 from "./assets/icon1.svg";
 import Icon3 from "./assets/icon3.svg";
@@ -311,15 +323,15 @@ function App() {
           <div className="story-grid">
             <div className="story-grid-left">
               <main>
-                <img src={Specie1} alt="" />
-                <img src={Specie2} alt="" />
-                <img src={Specie4} alt="" />
-                <img src={Specie6} alt="" />
-                <img src={Specie1} alt="" />
-                <img src={Specie2} alt="" />
-                <img src={Specie4} alt="" />
-                <img src={Specie6} alt="" />
-                <img src={Specie6} alt="" />
+                <img src={Story1} alt="" />
+                <img src={Story8} alt="" />
+                <img src={Story9} alt="" />
+                <img src={Story7} alt="" />
+                <img src={Story3} alt="" />
+                <img src={Story5} alt="" />
+                <img src={Story2} alt="" />
+                <img src={Story4} alt="" />
+                <img src={Story6} alt="" />
               </main>
             </div>
             <div className="story-grid-right">
@@ -393,7 +405,7 @@ function App() {
             </h2>
             <div className="dao-grid">
               <div className="dao-grid-cell">
-                <img src={Specie8} alt="" />
+                <img src={DAO3} alt="" />
                 <h3>PSYCHIC PUNK</h3>
                 <ul>
                   <li>- VP for short term flips</li>
@@ -404,7 +416,7 @@ function App() {
                 </ul>
               </div>
               <div className="dao-grid-cell">
-                <img src={Specie9} alt="" />
+                <img src={DAO1} alt="" />
                 <h3>ALCHEMIST PUNK</h3>
                 <ul>
                   <li>- VP for long term holds</li>
@@ -415,7 +427,7 @@ function App() {
                 </ul>
               </div>
               <div className="dao-grid-cell">
-                <img src={Specie10} alt="" />
+                <img src={DAO2} alt="" />
                 <h3>LEGENDARY MONK</h3>
                 <ul>
                   <li>- VP over any side</li>
