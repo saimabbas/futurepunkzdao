@@ -298,7 +298,7 @@ function App() {
             </h2>
             <img src={Specie1} alt="" />
             <h3>Mint price: 0.03 ETH + Gas</h3>
-            <button className='button'>MINT NOW</button>
+            <button className="button">MINT NOW</button>
             <h4 id="timer"></h4>
           </div>
         </div>
@@ -386,75 +386,66 @@ function App() {
           <div className="dao-battle">
             <h1 className="nebula">Psychics vs Alchemists </h1>
             <h2>
-              We welcome you to join a new DAO game and competition that has
-              never been done before...
+              Get ready for the Future Battle! The first Dao game of its kind.
               <br />
               Depending on which of these NFTs you hold, you receive access to
-              different areas of the game and different voting rights.
+              different areas of the game and different VP (voting power)
             </h2>
             <div className="dao-grid">
               <div className="dao-grid-cell">
                 <img src={Specie8} alt="" />
                 <h3>PSYCHIC PUNK</h3>
                 <ul>
-                  <li>- Voting power for short term purchases and flips.</li>
-                  <li>- Voting power for planet proposals.</li>
-                  <li>- Whitelist pass for V2.</li>
-                  <li>- Access to V2 creation process.</li>
-                  <li>- Access to metaverse property</li>
-                  <li>- Number of NFTs: 1639</li>
+                  <li>- VP for short term flips</li>
+                  <li>- VP for planet proposals</li>
+                  <li>- Whitelist pass for V2</li>
+                  <li>- Access to Utopia metaverse</li>
+                  <li>- Supply: 2195</li>
                 </ul>
               </div>
               <div className="dao-grid-cell">
                 <img src={Specie9} alt="" />
                 <h3>ALCHEMIST PUNK</h3>
                 <ul>
-                  <li>- Voting power for long term purchases.</li>
-                  <li>- Voting power for planet proposals.</li>
-                  <li>- Whitelist pass for V2.</li>
-                  <li>- Access to V2 creation process.</li>
-                  <li>- Access to metaverse property</li>
-                  <li>- Number of NFTs: 1639</li>
+                  <li>- VP for long term holds</li>
+                  <li>- VP for planet proposals</li>
+                  <li>- Whitelist pass for V2</li>
+                  <li>- Access to Utopia metaverse</li>
+                  <li>- Supply: 2195</li>
                 </ul>
               </div>
               <div className="dao-grid-cell">
                 <img src={Specie10} alt="" />
                 <h3>LEGENDARY MONK</h3>
                 <ul>
-                  <li>- Voting power over any side.</li>
-                  <li>- Voting power for planet proposals.</li>
-                  <li>- Free mintpass for V2.</li>
-                  <li>- Access to V2 creation process.</li>
-                  <li>- Access to metaverse property</li>
+                  <li>- VP over any side</li>
+                  <li>- VP for planet proposals</li>
+                  <li>- Free mintpass for V2</li>
+                  <li>- Access to Utopia metaverse</li>
                   <li>- more special perks</li>
-                  <li>- Number of NFTs: 1639-</li>
+                  <li>- Supply: 56</li>
                 </ul>
               </div>
             </div>
-            <h2>Short term purchases will be held in the Psychic wallet. </h2>
-            <h2>Long-term purchases will be stored in the Alchemist wallet.</h2>
-            <h2>Legendary monkz can choose on which site they stand.</h2>
+            <h2>Psychic- and Alchemist Punkz each have their own wallet. </h2>
+            <h2>Legendary Monkz can choose on which site they stand.</h2>
+            <h2>The V2 collection will be added to the game later on. </h2>
             <br />
             <br />
             <p>
-              The V2 collection will also be added to the game later on.
+              Q4 2022 we will compare which strategy was more successful.
               <br />
-              After one year we will compare which investment strategy was more
-              successful. The winner gets to decide what happens next with the
-              combined funds.
+              The winner gets to decide what happens next with the combined
+              funds.
               <br />
-              This is a game and an experiment. We can purchase bluechips NFts,
-              small-, midtier projects, crypto and metaverse land.
+              This is a unique game and an experiment.
+              <br />
+              You can buy bluechips, big projects, small projects, crypto
+              currencies and/or meta verse land.
             </p>
             <br />
             <br />
-            <p>
-              <b>Disclaimer:</b> Not all DAO related votes will be voted in
-              these devisions. Planet proposals regarding important aspects
-              inside the community and the trajectory of the movement will be
-              decided by equally distributed voting power. Here you can read
-              more about that.
-            </p>
+           <h2>Let the battle begin! </h2>
           </div>
         </div>
       </div>
