@@ -67,7 +67,6 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section2",
-        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -76,7 +75,6 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section3",
-        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -85,7 +83,6 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section4",
-        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -94,7 +91,6 @@ function App() {
     gsap.to(window, {
       scrollTo: {
         y: "#section5",
-        offsetY: 35,
       },
       ease: Power4.easeInOut,
     });
@@ -225,7 +221,7 @@ function App() {
   };
   return (
     <div className="space">
-      <img src={HeroBanner} alt="" className="space-bg" />
+      {/* <img src={HeroBanner} alt="" className="space-bg" /> */}
       {/* MoveToTop Button */}
       <span className="moveToTop" onClick={handleToTop}>
         <MdArrowUpward />
@@ -294,24 +290,16 @@ function App() {
       <div className="hero section " id="section1">
         <div className="box">
           <div className="hero-content">
-            <div className="hc-left">
-              <h1 className="cursive">Presale</h1>
-              <h2>Mint your Future Punk</h2>
-              <h2>
-                Price per NFT: <b>0.03 Eth</b>
-              </h2>
-              <br />
-              <h3>0.03 Eth</h3>
-              <h3>Maximum 3 NFTs per wallet </h3>
-            </div>
-            <div className="hc-right">
-              <main>
-                <img src={Specie1} alt="" />
-                <img src={Specie2} alt="" />
-                <img src={Specie4} alt="" />
-                <img src={Specie6} alt="" />
-              </main>
-            </div>
+            <h1 className="mainHeading">Future Punkz Genesis</h1>
+            <h2>
+              4444 randomly generated NFTs on the Ethereum Blockchain. The
+              holders gain access to DAO votes, the DAO game, and future drops.
+              Mint yours.
+            </h2>
+            <img src={Specie1} alt="" />
+            <h3>Mint price: 0.03 ETH + Gas</h3>
+            <button className='button'>MINT NOW</button>
+            <h4 id="timer"></h4>
           </div>
         </div>
       </div>
@@ -335,18 +323,16 @@ function App() {
               </main>
             </div>
             <div className="story-grid-right">
-              <h1>THE STORY</h1>
-              <h1>Future Punkz Genesis - Battle for Utopia. </h1>
+              {/* <h1 className="nebula">THE STORY</h1> */}
+              <h1 className="nebula">Battle for Utopia</h1>
               <p>
                 In the mountains of Nepal, a cave was discovered, holding the
                 story of 4 legendary Monkz…
-                <br />
                 <br />
                 It is said that they were so wise, they created a decentralized
                 city of financial freedom and abundance called Utopia. In
                 Utopia, people lived in harmony with their finances,
                 decentralized from authority.
-                <br />
                 <br />
                 The true history of the Monkz has long been forgotten, but
                 legends and rumors of a portal that leads to their world have
@@ -354,32 +340,27 @@ function App() {
                 call it the vault of time, the valley of forever, or just the
                 Eternal.
                 <br />
-                <br />
                 Every time the portal opens, a war breaks out between the
                 world’s most powerful tribes to claim the right to enter the
                 lost valley and gain access to the secret riches of Utopia.
                 <br />
-                <br />
                 In the year 4444, the portal opened and war broke out once
                 again.
-                <br />
                 <br />
                 Two great factions rose, The Psychic Punkz and the Alchemist
                 Punkz. Which faction will win out and make it to the city of
                 Utopia in the Monkz metaverse?
                 <br />
-                <br />
                 Psychic Punkz possess the power of seeing the short-term future
                 and therefore are excellent at fast decisions. They take high
                 risks and earn high rewards.
-                <br />
                 <br />
                 Alchemist Punkz rely on their experience and knowledge and
                 therefore can calculate what projects will prevail long-term.
                 With the power of patience and conviction, they accumulate
                 slowly, but steadily, over time.
               </p>
-              <h1>CHOOSE YOUR TRIBE</h1>
+              {/* <h1 className="nebula">CHOOSE YOUR TRIBE</h1>
               <p>
                 Future Punkz Genesis is a collection of 4444 NFTs on the
                 Ethereum Blockchain. The holders gain access to DAO votes, the
@@ -392,7 +373,7 @@ function App() {
                 An experiment to find out which investment strategy is the best
                 in the fast-moving NFT market. A friendly competition to create
                 the most value for our community.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -401,10 +382,9 @@ function App() {
       {/* DAO Battle Section */}
       <div className="species section" id="section3">
         <div className="box">
-          <h2 className="mainHeading">DAO Battle</h2>
+          <h2 className="mainHeading">THE DAO GAME</h2>
           <div className="dao-battle">
-            <h1>THE DAO GAME</h1>
-            <h1>Psychics vs Alchemists </h1>
+            <h1 className="nebula">Psychics vs Alchemists </h1>
             <h2>
               We welcome you to join a new DAO game and competition that has
               never been done before...
