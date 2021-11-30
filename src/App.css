@@ -375,6 +375,7 @@ button {
   font-size: 1.75rem;
   font-weight: 500;
   color: var(--black);
+  text-align: center;
 }
 /* Species */
 .species-content {
@@ -413,7 +414,6 @@ button {
 /* Roadmap */
 .roadmap {
   background-color: var(--white);
-  margin: 5rem 0 0 0;
 }
 .roadmap-container {
   width: 85%;
@@ -428,11 +428,15 @@ button {
   background-color: var(--black);
   width: 100%;
   position: relative;
-  border: 0.25rem solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .roadmap-container main {
   width: 0.25rem;
-  height: 10rem;
+  height: 7.5rem;
   background-color: var(--black);
 }
 .roadmap-box h4 {
@@ -440,7 +444,7 @@ button {
   font-size: 2.5rem;
   color: var(--white);
   position: relative;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 .roadmap-box p {
   font-size: 1.75rem;
@@ -556,6 +560,7 @@ button {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  text-align: center;
   padding: 1rem 1.5rem;
 }
 .team-box h6 {
@@ -603,7 +608,7 @@ button {
 .story-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.25fr;
   grid-template-rows: auto;
   grid-gap: 7.5rem;
 }
@@ -631,12 +636,14 @@ button {
   font-size: 2.5rem;
   font-weight: 600;
   margin: 0 0 0.75rem 0;
+  text-align: center;
 }
 .story-grid-right p {
   font-size: 1.5rem;
   font-weight: 400;
   opacity: 0.75;
   margin: 0 0 2.5rem 0;
+  text-align: center;
 }
 /* DAO Battle Section */
 .dao-battle h1 {
@@ -644,12 +651,14 @@ button {
   font-weight: 600;
   color: var(--black);
   margin: 0 0 1.5rem 0;
+  text-align: center;
 }
 .dao-battle h2 {
   font-size: 1.75rem;
   font-weight: 500;
   color: var(--black);
   opacity: 0.75;
+  text-align: center;
 }
 .dao-grid {
   width: 85%;
@@ -665,22 +674,26 @@ button {
 .dao-grid ul li {
   font-size: 1.5rem;
   color: var(--black);
+  width: 100%;
+  text-align: center;
   opacity: 0.75;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 .dao-grid ul {
   width: 100%;
   list-style: none;
 }
 .dao-grid h3 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 600;
   color: var(--black);
-  margin: 1.5rem 0;
+  text-align: center;
+  margin: 0.75rem 0;
 }
 .dao-battle p {
   font-size: 1.5rem;
   font-weight: 400;
+  text-align: center;
   color: var(--black);
   opacity: 0.75;
 }
