@@ -309,13 +309,17 @@ function App() {
           <div className="hero-content">
             <h1 className="mainHeading">Future Punkz Genesis</h1>
             <h2>
-              4444 randomly generated NFTs on the Ethereum Blockchain. The
-              holders gain access to DAO votes, the DAO game, and future drops.
-              Mint yours.
+              4444 Psychics and Alchemists battle for Utopia, the holy land of
+              decentralization and financial freedom.
+            </h2>
+            <h2>
+              This non fungible token shall represent your access to the DAOs
+              secret circles, the DAO strategy game and perks of the future. May
+              the ether be with you.
             </h2>
             <img src={Specie1} alt="" />
             <h3>Mint price: 0.03 ETH + Gas</h3>
-            <button className="button">MINT NOW</button>
+            <button className="button">The presale starts in:</button>
             <h4 id="timer"></h4>
           </div>
         </div>
@@ -472,9 +476,7 @@ function App() {
                 <h4>- THE DAO GAME -</h4>
                 <p>
                   Psychics vs Alchemists! Flipping vs holding! Who is gonna make
-                  it? <br /> Which Bluechips - moonshots - crypto currencies -
-                  meta verse land do we get? <br /> Choose your tribe and pray
-                  for your victory!
+                  it? <br /> Read the game instructions and choose your tribe.
                 </p>
               </div>
               <main></main>
@@ -496,13 +498,12 @@ function App() {
               <div className="roadmap-box">
                 <h4>- NEXT LEVEL -</h4>
                 <p>
-                  Time to expand the battle. Let’s create something unique.
+                  Time to expand the battle and create something unique.
                   <br />
                   Future Punkz DAO members and artists will conspire to create
-                  the v2 anime style collection.
+                  our v2 collection.
                   <br />
-                  This collection will be the heart of this DAO cause we all
-                  contribute to it.
+                  One word: Anime.
                 </p>
               </div>
               <main></main>
@@ -518,10 +519,7 @@ function App() {
               <div className="roadmap-box">
                 <h4>- V2 - </h4>
                 <p>
-                  V2 to the world. Imagine the first community created bluechip
-                  Nft.
-                  <br />
-                  We are not afraid to dream big.
+                  V2 to the world! Imagine the first community created bluechip.
                   <br />A part of these sales will also be allocated to the DAO
                   wallet.
                 </p>
